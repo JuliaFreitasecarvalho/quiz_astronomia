@@ -50,7 +50,7 @@ body{
 
 }
 
-.menu button{
+.menu label{
     border-radius: 6px;
     width: calc(100% - 100px);
     margin: 20px;
@@ -63,15 +63,15 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
-.menu button:hover {
+.menu label:hover {
     background-color: #3c3ca9;
     transform: scale(1.05);
     box-shadow: 5px 5px 8px rgba(14, 5, 5, 0.81);
 }
 
-.perguntas{
+/* .perguntas{
     background-color: rgb(248, 247, 250);
-    padding: 70px;
+    padding: 1px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 10px rgba(0, 0, 0, 0.3);
@@ -82,20 +82,21 @@ body{
 
 }
 
-.perguntas button{
-    border-radius: 6px;
-    width: calc(100% - 100px);
-    margin: 20px;
-    padding: 20px;
+.perguntas label{
+    border-radius:6px ;
+    width:20px;
+    margin:10px ;
+    padding: ;
     border: none;
     cursor: pointer;
     color: white;
     background-color: #202f70;
     font-size: 23px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-
+    flex-direction: column;
+    justify-content: space-evenly;
 }
-.perguntas button:hover {
+.perguntas label:hover {
     background-color: #3c3ca9;
     transform: scale(1.05);
     box-shadow: 5px 5px 8px rgba(14, 5, 5, 0.81);
@@ -104,4 +105,43 @@ body{
 .botaoerrado:active{
     background-color: brown;
     
+}
+
+input[type=radio]{
+    display: none;
+} */
+
+.pergunta{
+    display: block;
+    margin: 10px auto;
+    width: 250px;
+    background-color: #007BFF;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+
+.pergunta:hover {
+    background-color: #0056b3;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#submit-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
 }
